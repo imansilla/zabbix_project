@@ -1,0 +1,259 @@
+{
+	"id": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+	"name": "Zabbix",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "2d9121b6-04e9-b134-e0d1-d29a2963360d",
+			"name": "nubity",
+			"description": "",
+			"order": [
+				"b6684469-2e1b-9076-e16c-45f8d3f24cec",
+				"a4b15c29-d4eb-7b07-10ff-e2b079b4b418"
+			],
+			"folders_order": [],
+			"owner": "277795",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf"
+		},
+		{
+			"id": "09a27730-97c6-437a-6a9b-d36d3d4853d9",
+			"name": "zabbix",
+			"description": "",
+			"order": [
+				"90d819c8-90a5-3e72-4302-56fc67ab9cd9",
+				"48e3aaac-01a0-b857-9286-e1e29d041580",
+				"8ed24ea8-9d52-d683-86f6-5271a48282a7",
+				"5c911905-d120-8210-a408-e03fc5243778"
+			],
+			"folders_order": [],
+			"owner": "277795",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf"
+		}
+	],
+	"folders_order": [
+		"09a27730-97c6-437a-6a9b-d36d3d4853d9",
+		"2d9121b6-04e9-b134-e0d1-d29a2963360d"
+	],
+	"timestamp": 0,
+	"owner": "277795",
+	"public": false,
+	"requests": [
+		{
+			"id": "48e3aaac-01a0-b857-9286-e1e29d041580",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://zabbix01.nubity.com/api_jsonrpc.php",
+			"folder": "09a27730-97c6-437a-6a9b-d36d3d4853d9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522260130657,
+			"name": "history.get",
+			"description": "",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"responses": [],
+			"rawModeData": "{\n  \"jsonrpc\": \"2.0\",\n  \"auth\": \"2972a36060dea4a0040141f519208685\",\n  \"method\": \"trend.get\",\n  \"id\": 1,\n  \"params\": {\n\t  \"history\": \"0\",\n\t  \"hostids\": \"12789\",\n\t  \"itemids\": [\n\t  \t294209\n\t  ],\n\t  \"sortfield\": \"clock\",\n\t  \"sortorder\": \"DESC\",\n\t  \"time_from\": 1514764800,\n\t  \"time_till\": 1522540800\n  }\n}"
+		},
+		{
+			"id": "5c911905-d120-8210-a408-e03fc5243778",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://zabbix01.nubity.com/api_jsonrpc.php",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"data": [],
+			"dataMode": "raw",
+			"name": "triggerprototype.get",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1520866129420,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "09a27730-97c6-437a-6a9b-d36d3d4853d9",
+			"isFromCollection": true,
+			"collectionRequestId": "5c911905-d120-8210-a408-e03fc5243778",
+			"rawModeData": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"triggerprototype.get\",\n    \"params\": {\n        \"templateids\" : \"10001\",\n        \"output\":\"triggerid\"\n    },\n    \"auth\": \"714a9362b87762bf75665ff5ab51cc1c\",\n    \"id\": 3\n}"
+		},
+		{
+			"id": "8ed24ea8-9d52-d683-86f6-5271a48282a7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://zabbix01.nubity.com/api_jsonrpc.php",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"data": [],
+			"dataMode": "raw",
+			"name": "post login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1520864338811,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "09a27730-97c6-437a-6a9b-d36d3d4853d9",
+			"isFromCollection": true,
+			"collectionRequestId": "8ed24ea8-9d52-d683-86f6-5271a48282a7",
+			"rawModeData": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"user.login\",\n    \"params\": {\n        \"user\": \"Admin\",\n        \"password\": \"m0t0n3t4!\"\n    },\n    \"id\": 1,\n    \"auth\": null\n}"
+		},
+		{
+			"id": "90d819c8-90a5-3e72-4302-56fc67ab9cd9",
+			"name": "Login",
+			"description": "",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"method": "POST",
+			"headers": "Content-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"jsonrpc\": \"2.0\",\n\t\"method\": \"user.login\",\n\t\"id\": 1,\n\t\"params\": {\n\t\t\"user\": \"factorip\",\n\t\t\"password\": \"z4bb1xd3s4!\"\n\t}\n}",
+			"url": "http://zabbix02.dev.nubity.com/api_jsonrpc.php",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"collection_id": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"folder": "09a27730-97c6-437a-6a9b-d36d3d4853d9"
+		},
+		{
+			"id": "a4b15c29-d4eb-7b07-10ff-e2b079b4b418",
+			"name": "/instance/{instance_id}/graphs - dev-mynubity - CPU utilization (Pie)",
+			"description": "",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"method": "GET",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1NVUEVSX0FETUlOIiwiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibm1vcmFAZmFjdG9yaXAuY29tIiwiaWF0IjoxNTA0NTQ4NDc4LCJleHAiOjE1MDQ1NTIwNzh9.al0AfJrjUsrtZT0ey__nnCJmiGEwxABipuVzgOTo1avUc3sQ17qiRNc8ax5STaZoByS6i7Dr215twoujVQtGGhYAtagLoRv4pS2zsGWDLq87P7RculB4yxWaCTwWKKU3qvdnVFHDM66FqjZ076h_NubfYPNZx9N8xkfOpnDAeUyRNxrIiie2PGDerC2ztJgMCAZ-6clLlUeHlpllfv0PDWgL9oFsm7nymbREsNcI-2_sIrM6Zts0_NDexJKx0voZqs743o-Uzo39LSh0xpi3_bNcTGlLJPYlFPMfAEqLb_MxGs7dO0z99KUND6mfYkZFReFO__M_1ZzjrXV2h9zBC0B29C5dZiNOiBqCI_I6ngJXWbUiyFSr0a-iSGwC2WVFyS2iGefof70h674EFEtNoZC3QWitHawqrlC-9QWQJNoNOiYUZiLLjwTQoYFK3M40OfbuAsBTThqQeQdOAuuoqkNqZuDDqNYY-OWhkhYyaDzJyEP0PSXALbufuoOHyQ976PHMR4nPiXJ3oKsdQIhNynnOiKfYnQ51QMGvMwc05_m3QBtnzALrXPMZg57N8ZsJkgE8Sq6vrejPU2h3Zw5-pVu1rVU7oThVPTHnysMC9BJxUDwyd_o20dkvxfsbIRRdF1h44nJDksTgZjuVGdLjznCVi5nW1AUrUzb5ZAw2fqk",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "graph_id",
+					"value": "52839",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "include_content",
+					"value": "true",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "interval",
+					"value": "last minute",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"pathVariables": {},
+			"url": "http://api.pricing.nubity.com/instance/515/graphs.json?interval=last minute&graph_id=52839&include_content=true",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "interval",
+					"value": "last minute",
+					"equals": true,
+					"description": ""
+				},
+				{
+					"key": "graph_id",
+					"value": "52839",
+					"equals": true,
+					"description": ""
+				},
+				{
+					"key": "include_content",
+					"value": "true",
+					"equals": true,
+					"description": ""
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1NVUEVSX0FETUlOIiwiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibm1vcmFAZmFjdG9yaXAuY29tIiwiaWF0IjoxNTA0NTQ4NDc4LCJleHAiOjE1MDQ1NTIwNzh9.al0AfJrjUsrtZT0ey__nnCJmiGEwxABipuVzgOTo1avUc3sQ17qiRNc8ax5STaZoByS6i7Dr215twoujVQtGGhYAtagLoRv4pS2zsGWDLq87P7RculB4yxWaCTwWKKU3qvdnVFHDM66FqjZ076h_NubfYPNZx9N8xkfOpnDAeUyRNxrIiie2PGDerC2ztJgMCAZ-6clLlUeHlpllfv0PDWgL9oFsm7nymbREsNcI-2_sIrM6Zts0_NDexJKx0voZqs743o-Uzo39LSh0xpi3_bNcTGlLJPYlFPMfAEqLb_MxGs7dO0z99KUND6mfYkZFReFO__M_1ZzjrXV2h9zBC0B29C5dZiNOiBqCI_I6ngJXWbUiyFSr0a-iSGwC2WVFyS2iGefof70h674EFEtNoZC3QWitHawqrlC-9QWQJNoNOiYUZiLLjwTQoYFK3M40OfbuAsBTThqQeQdOAuuoqkNqZuDDqNYY-OWhkhYyaDzJyEP0PSXALbufuoOHyQ976PHMR4nPiXJ3oKsdQIhNynnOiKfYnQ51QMGvMwc05_m3QBtnzALrXPMZg57N8ZsJkgE8Sq6vrejPU2h3Zw5-pVu1rVU7oThVPTHnysMC9BJxUDwyd_o20dkvxfsbIRRdF1h44nJDksTgZjuVGdLjznCVi5nW1AUrUzb5ZAw2fqk",
+					"description": "Bearer"
+				}
+			],
+			"collection_id": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"folder": "2d9121b6-04e9-b134-e0d1-d29a2963360d"
+		},
+		{
+			"id": "b6684469-2e1b-9076-e16c-45f8d3f24cec",
+			"name": "Login nmora@factorip.com",
+			"description": "",
+			"collectionId": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "_username",
+					"value": "",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "_password",
+					"value": "",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "http://api.pricing.nubity.com/login.json",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "ba83b3a9-7458-ac37-6a17-74e7182577bf",
+			"folder": "2d9121b6-04e9-b134-e0d1-d29a2963360d"
+		}
+	]
+}
