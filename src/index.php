@@ -13,15 +13,33 @@ if(!ZabbixAPI::logout('https://zabbix01.nubity.com/api_jsonrpc.php','imansilla')
 }
 */
 
-$prueba = ZabbixAPI::fetch_array('history','get', [
+$prueba = ZabbixAPI::fetch_array('trend','get', [
     "output"=> "extend",
     "history" => 0,
-    "itemids" => "308229",
+    "itemids" => "294215",
     "sortfield" => "clock",
-    "sortorder" => "DESC"
+    "sortorder" => "DESC",
+    "time_from" => "1518652800"
 ]);
+/**
+ * Devuelvo los valores promedio con las fechas del Item "CPU System Time
+ */
 
-echo "<br><br>".json_encode($prueba);
+$final = [];
+
+$headers = ["Fecha", "Valor Promedio"];
+$final[] = $headers;
+
+foreach($prueba as $values)
+{
+    array_push($final, [date('m/d/Y h:m:i', $values['clock']), $values['value_avg']]);
+}
+
+echo "<br><br>".json_encode($final);
+
+
+
+
 
 
 
